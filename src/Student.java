@@ -1,7 +1,7 @@
 public class Student {
     public String name;
     public int age;
-    public double mark;
+    public double mark = 4;
     public boolean alive;
 
     // default constructor (with no args)
@@ -13,11 +13,11 @@ public class Student {
     }
 
     // full constructor with params/args
-    public Student(String n, int a, double m, boolean al) {
-        name = n;
-        age = a;
-        mark = m;
-        alive = al;
+    public Student(String name, int age, double mark, boolean alive) {
+        this.name = name;
+        this.age = age;
+        this.mark = mark;
+        this.alive = alive;
     }
 
     // copy-constructor
