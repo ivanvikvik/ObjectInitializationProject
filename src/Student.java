@@ -1,10 +1,10 @@
 public class Student {
-    public String name;
+    private String name;
     public int age;
     public double mark = 4;
     public boolean alive;
 
-    // default constructor (with no args)
+// default constructor (with no args)
     public Student(){
         name = "no name";
         age = 16;
