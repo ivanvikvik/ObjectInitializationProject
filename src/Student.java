@@ -1,8 +1,8 @@
 public class Student {
-    public String name;     // 8 bytes
-    public int age;         // 4 bytes
-    public double mark;     // 8 bytes
-    public boolean alive;   // 4 bytes
+    public String name;
+    public int age;
+    public double mark;
+    public boolean alive;
 
     // default constructor (with no args)
     public Student(){
@@ -20,25 +20,13 @@ public class Student {
         alive = al;
     }
 
-    // constructor with params/args
-    public Student(String n) {
-        name = n;
+    // copy-constructor
+    public Student(Student student){
+        name = student.name;
+        age = student.age;
+        mark = student.mark;
+        alive = student.alive;
     }
-
-    public Student(double m) {
-        mark = m;
-    }
-
-    public Student(String n, double m) {
-        name = n;
-        mark = m;
-    }
-
-    public Student(double m, String n) {
-        name = n;
-        mark = m;
-    }
-
 
     public String getInfo(){
         return name + ": age = " + age
